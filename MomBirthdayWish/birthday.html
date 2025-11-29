@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Happy Birthday Vidhya Maa 👑💗</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700;800&display=swap');
+
+/* Page loader */
+#loader {
+  position: fixed;
+  inset:0;
+  background:linear-gradient(140deg,#ff80ab,#d63384);
+  z-index:2000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-size:34px;
+  font-family:'Great Vibes', cursive;
+  animation: loaderOut 1.2s 2.2s forwards ease;
+  opacity:1;
+}
+@keyframes loaderOut {
+  to{opacity:0; transform:scale(1.3); pointer-events:none;}
+}
+
+body {
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#fff7fc;
+  text-align:center;
+  padding-bottom:120px;
+  color:#333;
+  overflow-x:hidden;
+}
+
+/* Floating hearts background */
+.hearts span {
+  position:fixed;
+  top:-20px;
+  font-size:24px;
+  animation:heartFall 7s linear infinite;
+  opacity:0.6;
+  pointer-events:none;
+}
+@keyframes heartFall {
+  to { transform: translateY(110vh) rotate(400deg); opacity:0; }
+}
+
+/* Hero banner */
+.hero {
+  height:82vh;
+  background:linear-gradient(160deg,#ff80ab,#d63384);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  position:relative;
+  overflow:hidden;
+}
+
+.banner-text {
+  font-size:40px;
+  font-weight:700;
+  color:white;
+  margin-bottom:28px;
+  min-height:55px;
+  font-family:'Great Vibes', cursive;
+  animation:titleGlow 2s infinite alternate ease-in-out;
+  padding:10px 22px;
+  border-radius:20px;
+}
+@keyframes titleGlow {
+  to { text-shadow:0 0 45px rgba(255,255,255,0.9); }
+}
+
+/* Memory main open button */
+.main-open {
+  margin-top:20px;
+}
+
+/* Buttons refined */
+.capsule-btn {
+  font-family:'Poppins',sans-serif;
+  background:white;
+  color:#d63384;
+  padding:15px 40px;
+  border-radius:50px;
+  font-size:18px;
+  font-weight:700;
+  border:none;
+  cursor:pointer;
+  box-shadow:0 8px 26px rgba(255,120,190,0.4);
+  transition:0.3s;
+}
+.capsule-btn:hover {
+  transform:translateY(-4px) scale(1.07);
+  background:#d63384;
+  color:white;
+  box-shadow:0 0 35px rgba(255,140,200,0.9);
+}
+
+/* Story reveal section */
+.memory-section {
+  display:none;
+  width:100%;
+  padding:60px 20px 20px;
+  opacity:0;
+  transform:translateY(25px);
+  animation:fadeUp 1.2s forwards;
+}
+@keyframes fadeUp {
+  to {opacity:1; transform:translateY(0);}
+}
+
+/* Image innovation */
+.memory-section img {
+  width:290px;
+  height:290px;
+  border-radius:28px;
+  border:6px solid white;
+  object-fit:cover;
+  box-shadow:0 0 46px rgba(255,120,180,0.5);
+  margin:30px auto;
+  display:block;
+  transition:0.4s;
+}
+.memory-section img:hover {
+  transform:rotate(2deg) scale(1.03);
+  box-shadow:0 0 65px rgba(255,120,200,0.8);
+}
+
+/* Premium message cards */
+.msg-box {
+  background:rgba(255,255,255,0.78);
+  backdrop-filter:blur(16px);
+  padding:24px 32px;
+  border-radius:20px;
+  max-width:680px;
+  margin:16px auto 24px;
+  font-size:17.2px;
+  line-height:1.75;
+  color:#6a1b4d;
+  font-weight:500;
+  border-top:5px solid rgba(255,128,171,0.7);
+  box-shadow:0 6px 28px rgba(255,128,190,0.25);
+  transition:0.4s;
+}
+.msg-box:hover {
+  box-shadow:0 0 48px rgba(255,128,180,0.5);
+  transform:translateY(-2px);
+}
+
+.signature {
+  font-size:15.8px;
+  font-weight:700;
+  color:#d63384;
+  margin-top:12px;
+}
+
+/* End text refined */
+.end-text {
+  font-size:32px;
+  font-weight:800;
+  color:#d63384;
+  margin-top:24px;
+  font-family:'Great Vibes', cursive;
+  animation: endPulse 2s infinite alternate;
+}
+@keyframes endPulse {
+  to{ text-shadow:0 0 40px rgba(255,120,180,0.7); opacity:0.95; }
+}
+
+/* Clean memory unlock bar */
+.options-bar {
+  margin:30px auto 10px;
+  background:white;
+  padding:10px 24px;
+  border-radius:50px;
+  width:max-content;
+  display:flex;
+  gap:14px;
+  justify-content:center;
+  box-shadow:0 6px 24px rgba(255,128,171,0.28);
+}
+</style>
+</head>
+
+<body>
+
+<div id="loader">✨ For Our Queen Vidhya Maa ✨</div>
+<div class="hearts"></div>
+
+<div class="hero">
+  <div id="typing" class="banner-text"></div>
+  <div class="main-open">
+    <button class="capsule-btn" onclick="showMemory(1)">🌸 Open Memory 1 🌸</button>
+  </div>
+</div>
+
+<!-- Memory 1 -->
+<div id="mem1" class="memory-section">
+  <img src="./images/image.1.jpeg" loading="lazy"/>
+  <div class="msg-box">
+    <p>The first memory with maa is when I rang a call to you for the first time !!!maa pickedup the call and said hello so the first person before I spoke to you  is ma so this will stay as a special memory and then on the parents meeting kanishkar got a chance to speak with maa and to be true i got very possessive who is this boy to speak with ammanu is my feel and kanishkar is always being one  of my  closest friend but amma won a special place in my life without even trying and she  is always a special person like always a mother for me 💓🩷and  I had a special memory of speaking to her in real in annual day of class 11 in sports only three words thank you  and third she said one word i don't even recognise correctly as I was in the peak happiness  as I spoke to  mother she had been kindful to me and I had never seen her as Bharu's mother she will also be a mother for me too❤️</p>
+  </div>
+  <div class="options-bar">
+    <button class="capsule-btn" onclick="showMemory(2)">✨ Memory 2 ✨</button>
+  </div>
+</div>
+
+<!-- Memory 2 -->
+<div id="mem2" class="memory-section">
+  <img src="./images/image.2.jpeg" loading="lazy"/>
+  <div class="msg-box">
+    <p>I have a sister named same as Vidhya after knowing that mom name is also vidhya I have an extra care for that sister 😄 and have a respect of not calling the sister by her name as a sake of respect for mom and this may find crazy and childish but I feel the name has special role ..... for me you(Bharuma) has been  the most beautiful women in the world but you will always tell her mom is always the beautiful women so obviously the happiest bday for the beautiful women 🎉💕</p>
+    <p><strong>May all your dreams come true 👑✨ Every door opens for you ❤️</strong></p>
+    <p><strong>This is awesome but add messages for her in some box and make it more decorative</strong></p>
+    <p><strong>Take care of your health and live long 💝💓</strong></p>
+    <p><strong>As your son I will always be there to take care of you 💖</strong></p>
+  </div>
+  <div class="options-bar">
+    <button class="capsule-btn" onclick="showMemory(3)">💝 Memory 3 💝</button>
+  </div>
+</div>
+
+<!-- Memory 3 -->
+<div id="mem3" class="memory-section">
+  <img src="./images/image.3.jpeg" loading="lazy"/>
+  <div class="msg-box">
+    <p>This is all about the beautiful couples I admired appa and amma whom I admired a lot in this life ...there maybe number of couples but when I see the both together for first time is in 8th parents meeting i was in the role to greet the parents  who are coming for parents meeting but I did not do my job but greated the couple welcome uncle aunty ...even I did not greet my parents 😅....this relation happened like aunty first then only amma Bharu knows well about this..... Bharu  Is fully possessive if I call you maa but she should get  possessive...!!!you have raised three princess and  Bharu is princess for me then you will always be the queen and every mother have a dream of having a boy child I hope you too had that and be happy that there is a boy for you who is always be your son ma</p>
+  </div>
+  <div class="end-text">👑 Happiest Birthday Queen Vidhya Maa 👑💗💐</div>
+</div>
+
+<script>
+// Typing animation
+const heroLine = "💗 Happiest Birthday to the Queen of Our Family — Vidhya Maa 💗";
+let i = 0;
+document.getElementById("typing").innerHTML = "";
+function typeLine(){
+  if(i < heroLine.length){
+    document.getElementById("typing").innerHTML += heroLine[i++];
+    setTimeout(typeLine, 90);
+  }
+}
+typeLine();
+
+// Smooth section reveal + keep previous
+function showMemory(n){
+  const section = document.getElementById("mem" + n);
+  section.style.display = "block";
+  section.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+// Hearts generator
+const heartPool=["💓","🩷","💕","🌸","✨"];
+setInterval(()=>{
+  let h=document.createElement("span");
+  h.innerHTML=heartPool[Math.floor(Math.random()*heartPool.length)];
+  h.style.left=Math.random()*100+"vw";
+  h.style.opacity=Math.random()*0.6+0.2;
+  h.style.fontSize=Math.random()*22+14+"px";
+  h.style.animationDuration=(Math.random()*3+4)+"s";
+  document.querySelector(".hearts").appendChild(h);
+  setTimeout(()=>h.remove(),7000);
+},700);
+</script>
+
+</body>
+</html>
